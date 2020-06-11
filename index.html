@@ -2,24 +2,25 @@
 <html>
 <head>
 	<title>Change Me</title>
+	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</head>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="static/custom.css">
 </head>
 <body>
-	<div class="container">
+	<div class="container mt-3">
 		<div class="row justify-content-center">
-			<div class="col-6 text-center bg-primary">
-				<h1>Red Prairie Manuals</h1>
+			<div class="col-6 text-center ">
+				<h1 class="font-italic">Red Prairie Manuals</h1>
 			</div>
 		</div>
 	</div>
 	<div class="container  mt-5">
 		<div class="row justify-content-center">
-			<div class="col-4">
-				<div class="card bg-success">
+			<div class="col-12">
+				<div class="card">
 					<button class="btn" data-toggle="collapse" data-target="#collapseMain" aria-expanded="false"
 							aria-controls="collapseMain">
 						RP FAQ
@@ -28,22 +29,6 @@
 
 					<div id="collapseMain" class="collapse" aria-labelledby="headingTwo">
 						<div class="card-body">
-
-							<div class="card">
-								<div class="card-header text-center" id="headingOne">
-									<button class="btn" data-toggle="collapse" data-target="#collapseOne"
-											aria-expanded="false" aria-controls="collapseThree">
-										Сброс счётчика коробов
-									</button>
-								</div>
-
-								<div id="collapseOne" class="collapse" aria-labelledby="headingTwo">
-									<div class="card-body">
-										<p>Для сброса счётчика коробов необходимо...</p>
-										<!--<img src="img.png" class="img-fluid" />-->
-									</div>
-								</div>
-							</div>
 
 							<div class="card">
 								<div class="card-header text-center" id="headingThree">
@@ -57,13 +42,24 @@
 
 								<div id="collapseThree" class="collapse" aria-labelledby="headingTwo">
 									<div class="card-body">
-										<p>Закрытие волна Новая Почта происходит так...</p>
+										<div class="border">
+											<p><span><img src="numicons/one.png"></span><strong class="ml-2">Открываем "Server Command Operations"</strong></p>
+											<img class="img-fluid img-thumbnail" src="content/rpCloseNp/1servCom.png">
+										</div>
+										<div class="mt-5 border">
+											<p><span><img src="numicons/two.png"></span><strong class="ml-2">Вставляем SQL код...</strong></p>
+											<img class="img-fluid img-thumbnail" src="content/rpCloseNp/2servComLoad.png">
+										</div>
+										<div class="mt-5 border">
+											<p><span><img src="numicons/three.png"></span><strong class="ml-2">Сравниваем поля.</strong></p>
+											<img class="img-fluid img-thumbnail" src="content/rpCloseNp/3servComComp.png">
+										</div>
 										<!--<img src="img.png" class="img-fluid"/></-->
 									</div>
 								</div>
 							</div>
 
-							<div class="card">
+							<div class="card mt-3">
 								<div class="card-header text-center" id="headingTwo">
 									<h2 class="mb-0">
 										<button class="btn" data-toggle="collapse" data-target="#collapseTwo"

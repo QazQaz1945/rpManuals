@@ -1,0 +1,6 @@
+[
+SELECT a.ship_line_id as ashplnid, b.ship_line_id as bshplnid, a.prtnum as product,a.pckqty as apck, a.appqty as aapp, b.pckqty as pck1, b.inpqty as inp2, b.stgqty as stg3, b.shpqty as shp4, b.ship_id, b.ordnum
+FROM pckwrk a
+LEFT JOIN shipment_line b ON a.ship_line_id=b.ship_line_id
+WHERE b.wh_id='80631' and b.schbat='20061130275eas' AND a.prtnum <> 'KITPART' AND a.pckqty <> a.appqty
+]
