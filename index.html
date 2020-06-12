@@ -17,30 +17,20 @@
 			</div>
 		</div>
 	</div>
-	<div class="container  mt-5">
-		<div class="row justify-content-center">
-			<div class="col-12">
-				<div class="card">
-					<button class="btn" data-toggle="collapse" data-target="#collapseMain" aria-expanded="false"
-							aria-controls="collapseMain">
-						RP FAQ
-					</button>
 
-
-					<div id="collapseMain" class="collapse" aria-labelledby="headingTwo">
 						<div class="card-body">
 
 							<div class="card">
 								<div class="card-header text-center" id="headingThree">
 									<h2 class="mb-0">
-										<button class="btn" data-toggle="collapse" data-target="#collapseThree"
+										<button class="btn" data-toggle="collapse" data-target="#collapseOne"
 												aria-expanded="false" aria-controls="collapseTwo">
 											Закрытие волны "Nova Poshta"
 										</button>
 									</h2>
 								</div>
 
-								<div id="collapseThree" class="collapse" aria-labelledby="headingTwo">
+								<div id="collapseOne" class="collapse" aria-labelledby="headingTwo">
 									<div class="card-body">
 										<div class="border">
 											<p><span><img src="numicons/one.png"></span><strong class="ml-2">Открываем "Server Command Operations"</strong></p>
@@ -76,19 +66,36 @@
 									</div>
 								</div>
 							</div>
+
+							<div class="card mt-3">
+								<div class="card-header text-center" id="headingTwo">
+									<h2 class="mb-0">
+										<button class="btn" data-toggle="collapse" data-target="#collapseThree"
+												aria-expanded="false" aria-controls="collapseTwo">
+											Сброс счётчика коробов
+										</button>
+									</h2>
+								</div>
+
+								<div id="collapseThree" class="collapse" aria-labelledby="headingTwo">
+									<div class="card-body">
+										<h2>Looping of carton ID counter.</h2>
+											<figure class="highlight">
+												<pre><code>
+<!--											-->do loop where count = xxxxx |
+<!--											-->generate next number where numcod = 'ctnnum'
+<!--										 --></code></pre>
+											</figure>
+										<p>где ххххх – номер, который необходимо приплюсовать к последнему коробу.</p>
+										<p>Например, последний короб 016180, то 100000-16180=83820=ххххх</p>
+										<p>Или 100000 + (999999 - текущий номер кoроба)</p>
+										
+									</div>
+								</div>
+							</div>
+
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="text-center mt-5">
-		<p><a href="rp.html">Сброс счётчика коробов</a></p>
-		<p><a href="rp.html">Закрытие волны "Nova Poshta"</a></p>
-		<p><a href="rp.html">Закрытие волны "Meest Express"</a></p>
-	</div>
-
+					
 
 </body>
 </html>
