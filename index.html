@@ -8,6 +8,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="static/custom.css">
+	<link href="static/css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
 	<div class="container mt-3">
@@ -32,19 +33,40 @@
 
 								<div id="collapseOne" class="collapse" aria-labelledby="headingTwo">
 									<div class="card-body">
-										<div class="border">
-											<p><span><img src="numicons/one.png"></span><strong class="ml-2">Открываем "Server Command Operations"</strong></p>
-											<img class="img-fluid img-thumbnail" src="content/rpCloseNp/1servCom.png">
+
+
+
+										<div class="row">
+											<div class="border col-lg">
+												<p><span><img src="numicons/one.png"></span><strong class="ml-2">Вставляем номер волны в "List Order/Batch Review"</strong></p>
+													<a href="content/rpCloseNp/1listBatch.png" data-lightbox="image-1" data-title="1-Step">
+														<img class="img-fluid img-thumbnail ctnt" src="content/rpCloseNp/1listBatch.png">
+													</a>
+											</div>
+											<div class="border col-lg">
+												<p><span><img src="numicons/two.png"></span><strong class="ml-2">Проверяем волну</strong></p>
+												<a href="content/rpCloseNp/2listBatch.png" data-lightbox="image-1" data-title="2-Step">
+													<img class="img-fluid img-thumbnail ctnt" src="content/rpCloseNp/2listBatch.png">
+												</a>
+											</div>
 										</div>
-										<div class="mt-5 border">
-											<p><span><img src="numicons/two.png"></span><strong class="ml-2">Вставляем SQL код...</strong></p>
-											<img class="img-fluid img-thumbnail" src="content/rpCloseNp/2servComLoad.png">
+
+
+
+
+										<div class="row">
+											<div class="border col-lg">
+												<p><span><img src="numicons/three.png"></span><strong class="ml-2">Server Command Operations</strong></p>
+													<a href="content/rpCloseNp/3servCom.png" data-lightbox="image-1" data-title="3-Step"></a>
+													<img class="img-fluid img-thumbnail ctnt" src="content/rpCloseNp/3servCom.png">
+											</div>
+											<div class="border col-lg">
+												<p><span><img src="numicons/four.png"></span><strong class="ml-2">Успех!</strong></p>
+													<a href="content/rpCloseNp/4success.png" data-lightbox="image-1" data-title="4-Step"></a>
+													<img class="img-fluid img-thumbnail ctnt" src="content/rpCloseNp/4success.png">
+											</div>
+											<!--<img src="img.png" class="img-fluid"/></-->
 										</div>
-										<div class="mt-5 border">
-											<p><span><img src="numicons/three.png"></span><strong class="ml-2">Сравниваем поля.</strong></p>
-											<img class="img-fluid img-thumbnail" src="content/rpCloseNp/3servComComp.png">
-										</div>
-										<!--<img src="img.png" class="img-fluid"/></-->
 									</div>
 								</div>
 							</div>
@@ -134,6 +156,13 @@
 
 						</div>
 					
-
+<script src="static/js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+    	'fadeDuration': 200,
+    	'resizeDuration': 200,
+    	'imageFadeDuration': 200,
+    })
+</script>
 </body>
 </html>
