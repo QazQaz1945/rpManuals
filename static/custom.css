@@ -11,5 +11,9 @@
 }
 
 img.ctnt:hover {
-	box-shadow: 0 0 0 3px lightblue;
+	box-shadow: 0 0 0 1px lightblue;
+}
+
+.col-lg {
+	background-color: whitesmoke;
 }
